@@ -22,11 +22,11 @@
 		name: "game"
 	};
 	swfobject.embedSWF(
-		"//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/Parzns.swf", 
+		"http://hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/Parzns.swf", 
 		"game", 
 		"760", "600", 
 		"9.0.0",
-		"//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/expressInstall.swf", 
+		"http://hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/expressInstall.swf", 
 		flashvars, params, attributes);
 	</script>
 
