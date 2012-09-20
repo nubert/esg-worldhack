@@ -21,13 +21,12 @@
 		echo json_encode(array('success' => false, 'message' => 'phrase id doesnt exist'));
 		exit;
 	}
-	mysql_free_result($result);
 	
 	// insert into the database
 	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('$fbuid', '$phraseId')";
 	$result = mysql_query($query, $dbConn);
 	
-	if ($result === true) {
+	if ($result !== true) {
 		echo json_encode(array('success' => false, 'message' => 'vote failed'));
 		exit;
 	} else {
