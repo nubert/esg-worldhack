@@ -11,6 +11,7 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script src="/assets/js/index.js"></script>
 	<script type="text/javascript">
 	var flashvars = {
 	};
