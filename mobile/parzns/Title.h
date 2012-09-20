@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface Title : UIViewController
 
 - (IBAction)performLogin:(id)sender;
 - (void)loginFailed;

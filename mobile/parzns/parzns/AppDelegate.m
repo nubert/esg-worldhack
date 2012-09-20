@@ -8,9 +8,9 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "LoginViewController.h"
+#import "Title.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) UINavigationController* navController;
@@ -38,15 +38,14 @@
     // If the login screen is not already displayed, display it. If the login screen is 
     // displayed, then getting back here means the login in progress did not successfully 
     // complete. In that case, notify the login view so it can update its UI appropriately.
-    if (![modalViewController isKindOfClass:[LoginViewController class]]) {
-        LoginViewController* loginViewController = [[LoginViewController alloc]
-                                                      initWithNibName:@"LoginViewController" 
+    if (![modalViewController isKindOfClass:[Title class]]) {
+        Title* title = [[Title alloc]
+                                                      initWithNibName:@"Title" 
                                                       bundle:nil];
-        [topViewController presentModalViewController:loginViewController animated:NO];
+        [topViewController presentModalViewController:title animated:NO];
     } else {
-        LoginViewController* loginViewController = 
-        (LoginViewController*)modalViewController;
-        [loginViewController loginFailed];
+        Title* title = (Title*)modalViewController;
+        [title loginFailed];
     }
 }
 
@@ -59,7 +58,7 @@
             UIViewController *topViewController = 
             [self.navController topViewController];
             if ([[topViewController modalViewController] 
-                 isKindOfClass:[LoginViewController class]]) {
+                 isKindOfClass:[Title class]]) {
                 [topViewController dismissModalViewControllerAnimated:YES];
             }
         }
@@ -104,15 +103,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.mainViewController = [[ViewController alloc] 
-                                   initWithNibName:@"ViewController_iPhone" bundle:nil];
-        self.navController = [[UINavigationController alloc]
-                              initWithRootViewController:self.mainViewController];
-    } else {
-        self.mainViewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.navController;
+    self.mainViewController = [[HomeViewController alloc] initWithNibName:@"Home" bundle:nil];
+    self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
     
     if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {

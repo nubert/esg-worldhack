@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "LoginViewController.h"
 #import "AppDelegate.h"
+#import "Title.h"
 
-@interface LoginViewController ()
+@interface Title ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
 
-@implementation LoginViewController
+@implementation Title
 @synthesize spinner;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

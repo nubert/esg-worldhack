@@ -57,7 +57,7 @@
 - (void)setGame:(Game *)game
 {
     _game = game;
-    
+    _gameDescription.text = [game toString];
 }
 
 @end

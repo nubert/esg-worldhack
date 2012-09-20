@@ -15,5 +15,6 @@
 }
 
 @property Game* game;
+@property IBOutlet UILabel* tableViewLabel;
 
 @end

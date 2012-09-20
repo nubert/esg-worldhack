@@ -12,7 +12,8 @@
 
 @property NSString* acronym;
 @property NSString* verb;
-@property NSArray* players;
+//@property Player* player1;
+//@property Player* player2;
 @property NSArray* entries;
 
 - (NSString*)toString;

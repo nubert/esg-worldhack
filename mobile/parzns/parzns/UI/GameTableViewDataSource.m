@@ -16,6 +16,7 @@
     self = [super init];
     if (self)
     {
+        games = [[NSMutableArray alloc] init];
         tableView = aTableView;
     }
     return self;

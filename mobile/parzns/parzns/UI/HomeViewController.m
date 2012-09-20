@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "GameDetailsViewController.h"
+#import "GameTableViewCell.h"
 
 @interface HomeViewController ()
 
@@ -35,6 +37,8 @@
     
     _gameList.dataSource = gameListDataSource;
     
+    _gameList.delegate = self;
+    
     [gameListDataSource sync];
 }
 
@@ -47,6 +51,15 @@
 - (void)startNewGame:(id)sender
 {
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    GameDetailsViewController* gameDetailsViewController = [[GameDetailsViewController alloc] initWithNibName:@"GameDetails" bundle:nil];
+
+    gameDetailsViewController.game = ((GameTableViewCell*)[tableView cellForRowAtIndexPath:indexPath]).game;
+    
+    [self presentModalViewController:gameDetailsViewController animated:NO];
 }
 
 @end
