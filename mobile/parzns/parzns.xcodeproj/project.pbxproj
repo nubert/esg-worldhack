@@ -17,8 +17,16 @@
 		96203BC0160B866B004A9468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BBF160B866B004A9468 /* main.m */; };
 		96203BC4160B866B004A9468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BC3160B866B004A9468 /* AppDelegate.m */; };
 		96203BC7160B866B004A9468 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BC6160B866B004A9468 /* ViewController.m */; };
-		96203BCA160B866B004A9468 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203BC8160B866B004A9468 /* ViewController_iPhone.xib */; };
-		96203BCD160B866B004A9468 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203BCB160B866B004A9468 /* ViewController_iPad.xib */; };
+		96203C98160BD090004A9468 /* app_icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C8E160BD090004A9468 /* app_icon_1024x1024.png */; };
+		96203C99160BD090004A9468 /* app_icon_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C8F160BD090004A9468 /* app_icon_768x1024.png */; };
+		96203C9A160BD090004A9468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C90160BD090004A9468 /* logo.png */; };
+		96203C9B160BD090004A9468 /* tab_add_coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C91160BD090004A9468 /* tab_add_coins.png */; };
+		96203C9C160BD090004A9468 /* tab_friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C92160BD090004A9468 /* tab_friends.png */; };
+		96203C9D160BD090004A9468 /* tab_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C93160BD090004A9468 /* tab_play.png */; };
+		96203C9E160BD090004A9468 /* logo-final-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C94160BD090004A9468 /* logo-final-small.png */; };
+		96203C9F160BD090004A9468 /* logo-final.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C95160BD090004A9468 /* logo-final.png */; };
+		96203CA0160BD090004A9468 /* mountain-new2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C96160BD090004A9468 /* mountain-new2.png */; };
+		96203CA1160BD090004A9468 /* paper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96203C97160BD090004A9468 /* paper2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +46,16 @@
 		96203BC3160B866B004A9468 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96203BC5160B866B004A9468 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		96203BC6160B866B004A9468 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		96203BC9160B866B004A9468 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		96203BCC160B866B004A9468 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		96203C8E160BD090004A9468 /* app_icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_1024x1024.png; sourceTree = "<group>"; };
+		96203C8F160BD090004A9468 /* app_icon_768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_768x1024.png; sourceTree = "<group>"; };
+		96203C90160BD090004A9468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		96203C91160BD090004A9468 /* tab_add_coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_add_coins.png; sourceTree = "<group>"; };
+		96203C92160BD090004A9468 /* tab_friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_friends.png; sourceTree = "<group>"; };
+		96203C93160BD090004A9468 /* tab_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_play.png; sourceTree = "<group>"; };
+		96203C94160BD090004A9468 /* logo-final-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-final-small.png"; sourceTree = "<group>"; };
+		96203C95160BD090004A9468 /* logo-final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-final.png"; sourceTree = "<group>"; };
+		96203C96160BD090004A9468 /* mountain-new2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mountain-new2.png"; sourceTree = "<group>"; };
+		96203C97160BD090004A9468 /* paper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +111,6 @@
 				96203BC3160B866B004A9468 /* AppDelegate.m */,
 				96203BC5160B866B004A9468 /* ViewController.h */,
 				96203BC6160B866B004A9468 /* ViewController.m */,
-				96203BC8160B866B004A9468 /* ViewController_iPhone.xib */,
-				96203BCB160B866B004A9468 /* ViewController_iPad.xib */,
 				96203BBA160B866B004A9468 /* Supporting Files */,
 			);
 			path = parzns;
@@ -105,12 +119,47 @@
 		96203BBA160B866B004A9468 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96203C8B160BD090004A9468 /* art */,
 				96203BBB160B866B004A9468 /* parzns-Info.plist */,
 				96203BBC160B866B004A9468 /* InfoPlist.strings */,
 				96203BBF160B866B004A9468 /* main.m */,
 				96203BC1160B866B004A9468 /* parzns-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96203C8B160BD090004A9468 /* art */ = {
+			isa = PBXGroup;
+			children = (
+				96203C8C160BD090004A9468 /* images */,
+			);
+			name = art;
+			path = ../../../art;
+			sourceTree = "<group>";
+		};
+		96203C8C160BD090004A9468 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				96203C8D160BD090004A9468 /* final */,
+				96203C94160BD090004A9468 /* logo-final-small.png */,
+				96203C95160BD090004A9468 /* logo-final.png */,
+				96203C96160BD090004A9468 /* mountain-new2.png */,
+				96203C97160BD090004A9468 /* paper2.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		96203C8D160BD090004A9468 /* final */ = {
+			isa = PBXGroup;
+			children = (
+				96203C8E160BD090004A9468 /* app_icon_1024x1024.png */,
+				96203C8F160BD090004A9468 /* app_icon_768x1024.png */,
+				96203C90160BD090004A9468 /* logo.png */,
+				96203C91160BD090004A9468 /* tab_add_coins.png */,
+				96203C92160BD090004A9468 /* tab_friends.png */,
+				96203C93160BD090004A9468 /* tab_play.png */,
+			);
+			path = final;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +213,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				96203BBE160B866B004A9468 /* InfoPlist.strings in Resources */,
-				96203BCA160B866B004A9468 /* ViewController_iPhone.xib in Resources */,
-				96203BCD160B866B004A9468 /* ViewController_iPad.xib in Resources */,
 				0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */,
+				96203C98160BD090004A9468 /* app_icon_1024x1024.png in Resources */,
+				96203C99160BD090004A9468 /* app_icon_768x1024.png in Resources */,
+				96203C9A160BD090004A9468 /* logo.png in Resources */,
+				96203C9B160BD090004A9468 /* tab_add_coins.png in Resources */,
+				96203C9C160BD090004A9468 /* tab_friends.png in Resources */,
+				96203C9D160BD090004A9468 /* tab_play.png in Resources */,
+				96203C9E160BD090004A9468 /* logo-final-small.png in Resources */,
+				96203C9F160BD090004A9468 /* logo-final.png in Resources */,
+				96203CA0160BD090004A9468 /* mountain-new2.png in Resources */,
+				96203CA1160BD090004A9468 /* paper2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,22 +250,6 @@
 				96203BBD160B866B004A9468 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		96203BC8160B866B004A9468 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96203BC9160B866B004A9468 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		96203BCB160B866B004A9468 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96203BCC160B866B004A9468 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
