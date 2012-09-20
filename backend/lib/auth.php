@@ -1,6 +1,6 @@
 <?php
 
-	if (!isset($_POST['fbuid'])) {
+	if (!isset($_REQUEST['fbuid'])) {
 		$response = array('success' => false, 'message' => 'You need to pass the FB UID');
 		echo json_encode($response);
 		exit;
