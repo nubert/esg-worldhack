@@ -7,11 +7,11 @@
 
 	<title>P.A.R.Z.N.S</title>
 	
-	<link href="/assets/css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/css/styles.css" rel="stylesheet" type="text/css" />
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-	<script src="/assets/js/index.js"></script>
+	<script src="//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/js/index.js"></script>
 	<script type="text/javascript">
 	var flashvars = {
 	};
@@ -22,11 +22,11 @@
 		name: "game"
 	};
 	swfobject.embedSWF(
-		"/assets/swf/Parzns.swf", 
+		"//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/Parzns.swf", 
 		"game", 
 		"760", "600", 
 		"9.0.0",
-		"/assets/swf/expressInstall.swf", 
+		"//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/assets/swf/expressInstall.swf", 
 		flashvars, params, attributes);
 	</script>
 
@@ -46,7 +46,7 @@
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '473854159303213', // App ID
-      channelUrl : '//hackathon.eastsidegamestudio.com/channel.html', // Channel File
+      channelUrl : '//hackathon.eastsidegamestudio.com/esg-worldhack/social/deploy/channel.html', // Channel File
       frictionlessRequests: true,
       status     : true, // check login status
       cookie     : true, // enable cookies to allow the server to access the session
