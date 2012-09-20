@@ -23,7 +23,7 @@
 		name: "game"
 	};
 	swfobject.embedSWF(
-		"<?php echo $baseUrl; ?>/assets/swf/Parzns.swf", 
+		"<?php echo $baseUrl; ?>/assets/swf/parzns.swf", 
 		"game", 
 		"760", "600", 
 		"9.0.0",
