@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0081E065160BA6C000EB0B05 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0081E064160BA6C000EB0B05 /* FacebookSDK.framework */; };
 		0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E06B160BBFED00EB0B05 /* LoginViewController.m */; };
 		0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0081E06C160BBFED00EB0B05 /* LoginViewController.xib */; };
+		229A0525160BB82A00319CE5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A0524160BB82A00319CE5 /* HomeViewController.m */; };
+		229A052C160BBB1600319CE5 /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A052B160BBB1600319CE5 /* GameTableViewCell.m */; };
+		229A052F160BBB8600319CE5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A052E160BBB8600319CE5 /* Game.m */; };
+		229A0532160BBD1F00319CE5 /* GameTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A0531160BBD1F00319CE5 /* GameTableViewDataSource.m */; };
+		229A0535160BC21900319CE5 /* EntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A0534160BC21900319CE5 /* EntryTableViewCell.m */; };
+		229A0538160BC2D600319CE5 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A0537160BC2D600319CE5 /* Entry.m */; };
+		229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */; };
+		229A054B160BCC8F00319CE5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229A054A160BCC8F00319CE5 /* FacebookSDK.framework */; };
+		229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A054D160BCEC300319CE5 /* GameDetailsViewController.m */; };
 		96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB3160B866B004A9468 /* UIKit.framework */; };
 		96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB5160B866B004A9468 /* Foundation.framework */; };
 		96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB7160B866B004A9468 /* CoreGraphics.framework */; };
@@ -35,10 +43,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0081E064160BA6C000EB0B05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		0081E06A160BBFED00EB0B05 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
 		0081E06B160BBFED00EB0B05 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		0081E06C160BBFED00EB0B05 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		229A0523160BB82A00319CE5 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = UI/HomeViewController.h; sourceTree = "<group>"; };
+		229A0524160BB82A00319CE5 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = UI/HomeViewController.m; sourceTree = "<group>"; };
+		229A052A160BBB1600319CE5 /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTableViewCell.h; path = UI/GameTableViewCell.h; sourceTree = "<group>"; };
+		229A052B160BBB1600319CE5 /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameTableViewCell.m; path = UI/GameTableViewCell.m; sourceTree = "<group>"; };
+		229A052D160BBB8600319CE5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		229A052E160BBB8600319CE5 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		229A0530160BBD1F00319CE5 /* GameTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameTableViewDataSource.h; path = UI/GameTableViewDataSource.h; sourceTree = "<group>"; };
+		229A0531160BBD1F00319CE5 /* GameTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameTableViewDataSource.m; path = UI/GameTableViewDataSource.m; sourceTree = "<group>"; };
+		229A0533160BC21900319CE5 /* EntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryTableViewCell.h; path = UI/EntryTableViewCell.h; sourceTree = "<group>"; };
+		229A0534160BC21900319CE5 /* EntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryTableViewCell.m; path = UI/EntryTableViewCell.m; sourceTree = "<group>"; };
+		229A0536160BC2D600319CE5 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		229A0537160BC2D600319CE5 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		229A0539160BC3F200319CE5 /* EntryTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryTableViewDataSource.h; path = UI/EntryTableViewDataSource.h; sourceTree = "<group>"; };
+		229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryTableViewDataSource.m; path = UI/EntryTableViewDataSource.m; sourceTree = "<group>"; };
+		229A054A160BCC8F00319CE5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		229A054C160BCEC300319CE5 /* GameDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDetailsViewController.h; path = UI/GameDetailsViewController.h; sourceTree = "<group>"; };
+		229A054D160BCEC300319CE5 /* GameDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDetailsViewController.m; path = UI/GameDetailsViewController.m; sourceTree = "<group>"; };
 		96203BAF160B866B004A9468 /* parzns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parzns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96203BB3160B866B004A9468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96203BB5160B866B004A9468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0081E065160BA6C000EB0B05 /* FacebookSDK.framework in Frameworks */,
+				229A054B160BCC8F00319CE5 /* FacebookSDK.framework in Frameworks */,
 				96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */,
 				96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */,
 				96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +107,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		229A0522160BB6FA00319CE5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				229A0523160BB82A00319CE5 /* HomeViewController.h */,
+				229A0524160BB82A00319CE5 /* HomeViewController.m */,
+				229A052A160BBB1600319CE5 /* GameTableViewCell.h */,
+				229A052B160BBB1600319CE5 /* GameTableViewCell.m */,
+				229A0530160BBD1F00319CE5 /* GameTableViewDataSource.h */,
+				229A0531160BBD1F00319CE5 /* GameTableViewDataSource.m */,
+				229A0533160BC21900319CE5 /* EntryTableViewCell.h */,
+				229A0534160BC21900319CE5 /* EntryTableViewCell.m */,
+				229A0539160BC3F200319CE5 /* EntryTableViewDataSource.h */,
+				229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */,
+				229A054C160BCEC300319CE5 /* GameDetailsViewController.h */,
+				229A054D160BCEC300319CE5 /* GameDetailsViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		96203BA4160B866B004A9468 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +146,7 @@
 		96203BB2160B866B004A9468 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0081E064160BA6C000EB0B05 /* FacebookSDK.framework */,
+				229A054A160BCC8F00319CE5 /* FacebookSDK.framework */,
 				96203BB3160B866B004A9468 /* UIKit.framework */,
 				96203BB5160B866B004A9468 /* Foundation.framework */,
 				96203BB7160B866B004A9468 /* CoreGraphics.framework */,
@@ -119,6 +162,7 @@
 				96203CA5160BD229004A9468 /* GameTableViewCell.xib */,
 				96203CA6160BD229004A9468 /* Home.xib */,
 				96203CA7160BD229004A9468 /* Title.xib */,
+				229A0522160BB6FA00319CE5 /* UI */,
 				0081E06A160BBFED00EB0B05 /* LoginViewController.h */,
 				0081E06B160BBFED00EB0B05 /* LoginViewController.m */,
 				0081E06C160BBFED00EB0B05 /* LoginViewController.xib */,
@@ -127,6 +171,10 @@
 				96203BC5160B866B004A9468 /* ViewController.h */,
 				96203BC6160B866B004A9468 /* ViewController.m */,
 				96203BBA160B866B004A9468 /* Supporting Files */,
+				229A052D160BBB8600319CE5 /* Game.h */,
+				229A052E160BBB8600319CE5 /* Game.m */,
+				229A0536160BC2D600319CE5 /* Entry.h */,
+				229A0537160BC2D600319CE5 /* Entry.m */,
 			);
 			path = parzns;
 			sourceTree = "<group>";
@@ -257,6 +305,14 @@
 				96203BC0160B866B004A9468 /* main.m in Sources */,
 				96203BC4160B866B004A9468 /* AppDelegate.m in Sources */,
 				96203BC7160B866B004A9468 /* ViewController.m in Sources */,
+				229A0525160BB82A00319CE5 /* HomeViewController.m in Sources */,
+				229A052C160BBB1600319CE5 /* GameTableViewCell.m in Sources */,
+				229A052F160BBB8600319CE5 /* Game.m in Sources */,
+				229A0532160BBD1F00319CE5 /* GameTableViewDataSource.m in Sources */,
+				229A0535160BC21900319CE5 /* EntryTableViewCell.m in Sources */,
+				229A0538160BC2D600319CE5 /* Entry.m in Sources */,
+				229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */,
+				229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */,
 				0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +383,16 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../FacebookSDK\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -344,14 +402,16 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../../FacebookSDK\"",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
