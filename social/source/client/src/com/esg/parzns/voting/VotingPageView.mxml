@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<voting:VotingPage xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				   xmlns:s="library://ns.adobe.com/flex/spark" 
+				   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:voting="com.esg.parzns.voting.*" width="400" height="372">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:VGroup x="61" y="60" width="279" height="296" id="optionsContainer">
+	</s:VGroup>
+</voting:VotingPage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<creation:InputPanel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+					 xmlns:s="library://ns.adobe.com/flex/spark" 
+					 xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:creation="com.esg.parzns.creation.*" width="470" height="240">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:TextInput x="49" y="140" id="text1"/>
+	<s:TextInput x="49" y="168" id="text2"/>
+	<s:TextInput x="49" y="195" id="text3"/>
+	<s:Button x="268" y="139" label="Submit" width="132" height="71"/>
+	<creation:UsersBasePanelView x="30" y="10">
+	</creation:UsersBasePanelView>
+</creation:InputPanel>
