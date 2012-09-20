@@ -19,5 +19,24 @@ var PARZNS = {
 				});
 				break;
     	}
+    },
+    purchaseCoins: function(item_id)
+    {
+    	FB.ui({
+    		method: 'pay',
+    		action: 'buy_item',
+    		order_info: {
+    			'item_id': item_id
+    		}
+		}, function(data)
+		{
+			if (data['order_id']) {
+				
+			} else if (data['error_code']) {
+				
+			} else {
+				
+			}
+		});
     }
 }
