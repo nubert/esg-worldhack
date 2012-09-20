@@ -18,6 +18,11 @@
 		229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */; };
 		229A054B160BCC8F00319CE5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229A054A160BCC8F00319CE5 /* FacebookSDK.framework */; };
 		229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A054D160BCEC300319CE5 /* GameDetailsViewController.m */; };
+		22CA62BF160BD5950095B40D /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA62BA160BD5940095B40D /* EntryTableViewCell.xib */; };
+		22CA62C0160BD5950095B40D /* GameDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA62BB160BD5940095B40D /* GameDetails.xib */; };
+		22CA62C1160BD5950095B40D /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA62BC160BD5940095B40D /* GameTableViewCell.xib */; };
+		22CA62C2160BD5950095B40D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA62BD160BD5950095B40D /* Home.xib */; };
+		22CA62C3160BD5950095B40D /* Title.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA62BE160BD5950095B40D /* Title.xib */; };
 		96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB3160B866B004A9468 /* UIKit.framework */; };
 		96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB5160B866B004A9468 /* Foundation.framework */; };
 		96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB7160B866B004A9468 /* CoreGraphics.framework */; };
@@ -58,6 +63,11 @@
 		229A054A160BCC8F00319CE5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		229A054C160BCEC300319CE5 /* GameDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDetailsViewController.h; path = UI/GameDetailsViewController.h; sourceTree = "<group>"; };
 		229A054D160BCEC300319CE5 /* GameDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDetailsViewController.m; path = UI/GameDetailsViewController.m; sourceTree = "<group>"; };
+		22CA62BA160BD5940095B40D /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		22CA62BB160BD5940095B40D /* GameDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDetails.xib; sourceTree = "<group>"; };
+		22CA62BC160BD5940095B40D /* GameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
+		22CA62BD160BD5950095B40D /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		22CA62BE160BD5950095B40D /* Title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Title.xib; sourceTree = "<group>"; };
 		96203BAF160B866B004A9468 /* parzns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parzns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96203BB3160B866B004A9468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96203BB5160B866B004A9468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +110,11 @@
 		229A0522160BB6FA00319CE5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				22CA62BA160BD5940095B40D /* EntryTableViewCell.xib */,
+				22CA62BB160BD5940095B40D /* GameDetails.xib */,
+				22CA62BC160BD5940095B40D /* GameTableViewCell.xib */,
+				22CA62BD160BD5950095B40D /* Home.xib */,
+				22CA62BE160BD5950095B40D /* Title.xib */,
 				229A0523160BB82A00319CE5 /* HomeViewController.h */,
 				229A0524160BB82A00319CE5 /* HomeViewController.m */,
 				229A052A160BBB1600319CE5 /* GameTableViewCell.h */,
@@ -272,6 +287,11 @@
 				96203C9F160BD090004A9468 /* logo-final.png in Resources */,
 				96203CA0160BD090004A9468 /* mountain-new2.png in Resources */,
 				96203CA1160BD090004A9468 /* paper2.jpg in Resources */,
+				22CA62BF160BD5950095B40D /* EntryTableViewCell.xib in Resources */,
+				22CA62C0160BD5950095B40D /* GameDetails.xib in Resources */,
+				22CA62C1160BD5950095B40D /* GameTableViewCell.xib in Resources */,
+				22CA62C2160BD5950095B40D /* Home.xib in Resources */,
+				22CA62C3160BD5950095B40D /* Title.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
