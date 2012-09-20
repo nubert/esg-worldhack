@@ -27,6 +27,11 @@
 		96203C9F160BD090004A9468 /* logo-final.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C95160BD090004A9468 /* logo-final.png */; };
 		96203CA0160BD090004A9468 /* mountain-new2.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C96160BD090004A9468 /* mountain-new2.png */; };
 		96203CA1160BD090004A9468 /* paper2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96203C97160BD090004A9468 /* paper2.jpg */; };
+		96203CA8160BD22A004A9468 /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA3160BD229004A9468 /* EntryTableViewCell.xib */; };
+		96203CA9160BD22A004A9468 /* GameDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA4160BD229004A9468 /* GameDetails.xib */; };
+		96203CAA160BD22A004A9468 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA5160BD229004A9468 /* GameTableViewCell.xib */; };
+		96203CAB160BD22A004A9468 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA6160BD229004A9468 /* Home.xib */; };
+		96203CAC160BD22A004A9468 /* Title.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA7160BD229004A9468 /* Title.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		96203C95160BD090004A9468 /* logo-final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-final.png"; sourceTree = "<group>"; };
 		96203C96160BD090004A9468 /* mountain-new2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mountain-new2.png"; sourceTree = "<group>"; };
 		96203C97160BD090004A9468 /* paper2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paper2.jpg; sourceTree = "<group>"; };
+		96203CA3160BD229004A9468 /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		96203CA4160BD229004A9468 /* GameDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDetails.xib; sourceTree = "<group>"; };
+		96203CA5160BD229004A9468 /* GameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
+		96203CA6160BD229004A9468 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		96203CA7160BD229004A9468 /* Title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Title.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,11 @@
 		96203BB9160B866B004A9468 /* parzns */ = {
 			isa = PBXGroup;
 			children = (
+				96203CA3160BD229004A9468 /* EntryTableViewCell.xib */,
+				96203CA4160BD229004A9468 /* GameDetails.xib */,
+				96203CA5160BD229004A9468 /* GameTableViewCell.xib */,
+				96203CA6160BD229004A9468 /* Home.xib */,
+				96203CA7160BD229004A9468 /* Title.xib */,
 				0081E06A160BBFED00EB0B05 /* LoginViewController.h */,
 				0081E06B160BBFED00EB0B05 /* LoginViewController.m */,
 				0081E06C160BBFED00EB0B05 /* LoginViewController.xib */,
@@ -224,6 +239,11 @@
 				96203C9F160BD090004A9468 /* logo-final.png in Resources */,
 				96203CA0160BD090004A9468 /* mountain-new2.png in Resources */,
 				96203CA1160BD090004A9468 /* paper2.jpg in Resources */,
+				96203CA8160BD22A004A9468 /* EntryTableViewCell.xib in Resources */,
+				96203CA9160BD22A004A9468 /* GameDetails.xib in Resources */,
+				96203CAA160BD22A004A9468 /* GameTableViewCell.xib in Resources */,
+				96203CAB160BD22A004A9468 /* Home.xib in Resources */,
+				96203CAC160BD22A004A9468 /* Title.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
