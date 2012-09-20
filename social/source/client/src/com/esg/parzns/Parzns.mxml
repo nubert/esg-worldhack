@@ -2,8 +2,25 @@
 <parzns:ParznsMain xmlns:fx="http://ns.adobe.com/mxml/2009" 
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
 			   xmlns:main="*"
-			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" xmlns:parzns="com.esg.parzns.*">
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" xmlns:parzns="com.esg.parzns.*" xmlns:creation="com.esg.parzns.creation.*" xmlns:voting="com.esg.parzns.voting.*">
+	<parzns:states>
+		<s:State name="loading"/>
+		<s:State name="game"/>
+	</parzns:states>
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	<s:Label text="PARZNS OMG&#xd;" fontSize="36" width="412" x.loading="234" y.loading="75" horizontalCenter.game="1" top.game="28" text.game="PARZNS OMG&#xd;" textAlign.game="center"/>
+	<s:Group includeIn="game" left="10" right="10" bottom="10" height="149" verticalCenter="215">
+		<creation:UsersBasePanelView verticalCenter="0" horizontalCenter="-200">
+		</creation:UsersBasePanelView>
+		<creation:InputPanelView verticalCenter="0" horizontalCenter="200">
+		</creation:InputPanelView>
+	</s:Group>
+	<s:Group includeIn="game" height="363" right="10" left="10" top="70" verticalCenter="-49">
+		<creation:UsersBasePanelView verticalCenter="-126" horizontalCenter="0" top="10">
+		</creation:UsersBasePanelView>
+		<voting:VotingPageView bottom="0" height="253" verticalCenter="55" horizontalCenter="0">
+		</voting:VotingPageView>
+	</s:Group>
 </parzns:ParznsMain>

@@ -4,3 +4,12 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+#logo {
+	margin: 10px;
+}
+
+#game {
+	width: 760px;
+	height: 600px;
+}
