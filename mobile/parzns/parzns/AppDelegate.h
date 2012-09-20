@@ -13,7 +13,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *mainViewController;
 
-@property (strong, nonatomic) ViewController *viewController;
+- (void)openSession;
 
 @end
