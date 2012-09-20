@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface ViewController ()
 
