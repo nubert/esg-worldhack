@@ -5,8 +5,6 @@ require_once '../lib/db.php';
 $letter = isset($_GET['letter']) ? $_GET['letter'] : '';
 
 if ($letter && strlen($letter) == 1 && ctype_alpha($letter)) {
-	
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,3 +19,6 @@ if ($letter && strlen($letter) == 1 && ctype_alpha($letter)) {
 The Letter <?php echo strtoupper($letter); ?>.
 </body>
 </html>
+<?php
+}
+?>
