@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0081E065160BA6C000EB0B05 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0081E064160BA6C000EB0B05 /* FacebookSDK.framework */; };
 		96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB3160B866B004A9468 /* UIKit.framework */; };
 		96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB5160B866B004A9468 /* Foundation.framework */; };
 		96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB7160B866B004A9468 /* CoreGraphics.framework */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0081E064160BA6C000EB0B05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		96203BAF160B866B004A9468 /* parzns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parzns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96203BB3160B866B004A9468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96203BB5160B866B004A9468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0081E065160BA6C000EB0B05 /* FacebookSDK.framework in Frameworks */,
 				96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */,
 				96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */,
 				96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		96203BB2160B866B004A9468 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0081E064160BA6C000EB0B05 /* FacebookSDK.framework */,
 				96203BB3160B866B004A9468 /* UIKit.framework */,
 				96203BB5160B866B004A9468 /* Foundation.framework */,
 				96203BB7160B866B004A9468 /* CoreGraphics.framework */,
@@ -250,6 +254,11 @@
 		96203BD1160B866B004A9468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../FacebookSDK\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
@@ -261,6 +270,11 @@
 		96203BD2160B866B004A9468 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../FacebookSDK\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
@@ -288,6 +302,7 @@
 				96203BD2160B866B004A9468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
