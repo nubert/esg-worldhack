@@ -90,6 +90,7 @@
 		96203CA5160BD229004A9468 /* GameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		96203CA6160BD229004A9468 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		96203CA7160BD229004A9468 /* Title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Title.xib; sourceTree = "<group>"; };
+		96203CB1160BD9DB004A9468 /* JSONKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKeys.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */,
 				229A054C160BCEC300319CE5 /* GameDetailsViewController.h */,
 				229A054D160BCEC300319CE5 /* GameDetailsViewController.m */,
+				96203CB1160BD9DB004A9468 /* JSONKeys.h */,
 			);
 			name = UI;
 			sourceTree = "<group>";
