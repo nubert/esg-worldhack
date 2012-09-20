@@ -1,5 +1,7 @@
 package com.esg.parzns
 {
+	import com.esg.parzns.core.gameplay.PlayerInfo;
+	
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
 	
@@ -10,6 +12,8 @@ package com.esg.parzns
 		public function ParznsMain()
 		{
 			super();
+			
+			PlayerInfo.init({id:"807610435", username:"Alon", points:6054});
 			
 			var timer:Timer = new Timer(1000);
 			timer.addEventListener(TimerEvent.TIMER, onTimer);

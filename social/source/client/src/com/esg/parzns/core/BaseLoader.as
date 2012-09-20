@@ -1,5 +1,8 @@
 package com.esg.parzns.core
 {
+	import com.adobe.serialization.json.JSON;
+	
+	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
 	import flash.net.URLLoader;
@@ -8,7 +11,7 @@ package com.esg.parzns.core
 	
 	public class BaseLoader extends EventDispatcher
 	{
-		public static var GAME_SERVER_URL:String = "http://";
+		public static var GAME_SERVER_URL:String = "http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/service/";
 			
 		public function BaseLoader(target:IEventDispatcher=null)
 		{
@@ -17,14 +20,17 @@ package com.esg.parzns.core
 		
 		public function setCall(serviceCallName:String, params:Dictionary):void
 		{
-			var url:String = GAME_SERVER_URL + "/" + serviceCallName + encodeParams(params)
+			var url:String = GAME_SERVER_URL + serviceCallName + encodeParams(params)
 			var urlRequest:URLRequest = new URLRequest(GAME_SERVER_URL + "/" + serviceCallName);
-			var loader:URLLoader = new URLLoader()
+			var loader:URLLoader = new URLLoader();
+			
+			loader.addEventListener(Event.COMPLETE, onComplete);
+			loader.load(urlRequest);
 		}
 		
 		private function encodeParams(params:Dictionary):String
 		{
-			if (dictionary == null)
+			if (params == null)
 			{
 				return "";
 			}
@@ -37,6 +43,12 @@ package com.esg.parzns.core
 			
 			returnedParams = returnedParams.slice(0, returnedParams.lastIndexOf("&"));
 			return returnedParams;
+		}
+		
+		private function onComplete(e:Event):void
+		{
+			var response:* = JSON.decode(e.target.data);
+			dispatchEvent(new BaseLoaderEvent(BaseLoaderEvent.LOAD_COMPLETE, response));
 		}
 									 
 	}
