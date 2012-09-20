@@ -39,7 +39,7 @@
 	<img id="logo" src="<?php echo $baseUrl; ?>/assets/images/logo.png" alt="P.A.R.Z.N.S" />
 	<div id="menu">
 		<a href="<?php echo $baseUrl; ?>"><img src="<?php echo $baseUrl; ?>/assets/images/tab_play.png" alt="Play" /></a>
-		<a href="javascript:PARZNS.sendRequest('sendInvites');"><img src="<?php echo $baseUrl; ?>/assets/images/tab_friends.png" alt="Invite Friends" /></a>
+		<a href="javascript:void(0);" onClick="PARZNS.sendRequest('sendInvite', null);"><img src="<?php echo $baseUrl; ?>/assets/images/tab_friends.png" alt="Invite Friends" /></a>
 		<a href="#"><img src="<?php echo $baseUrl; ?>/assets/images/tab_add_coins.png" alt="Add Coins" /></a>
 	</div>
 </div>

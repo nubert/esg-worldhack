@@ -15,7 +15,7 @@ var PARZNS = {
 				
 				FB.ui(params, function()
 				{
-					console.log('Sent');
+					
 				});
 				break;
     	}
