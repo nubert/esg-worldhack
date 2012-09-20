@@ -16,7 +16,7 @@ if ($letter && strlen($letter) == 1 && ctype_alpha($letter)) {
   <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" />
 </head>
 <body>
-<img src="<?php echo $baseUrl . '/images/letters/' . strtolower($letter) . '.png'; ?>" />
+<img src="<?php echo $baseUrl . '/assets/images/letters/' . strtolower($letter) . '.png'; ?>" />
 </body>
 </html>
 <?php
