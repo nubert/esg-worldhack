@@ -4,13 +4,13 @@ package com.esg.parzns.core.gameplay
 
 	public class GameData
 	{
-		private var friend1Id:String;
-		private var friend2Id:String;
-		private var friend1Name:String;
-		private var friend2Name:String;
-		private var verb:String;
-		private var acronym:String;
-		private var entries:Dictionary;
+		public var friend1Id:String;
+		public var friend2Id:String;
+		public var friend1Name:String;
+		public var friend2Name:String;
+		public var verb:String;
+		public var acronym:String;
+		public var entries:Dictionary;
 		
 		public function GameData(info:*)
 		{

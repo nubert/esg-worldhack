@@ -5,6 +5,8 @@ package com.esg.parzns.voting
 	import com.esg.parzns.core.gameplay.GameData;
 	import com.esg.parzns.core.gameplay.Games;
 	import com.esg.parzns.core.gameplay.PlayerInfo;
+	import com.esg.parzns.creation.UsersBasePanel;
+	import com.esg.parzns.creation.UsersBasePanelView;
 	
 	import flash.utils.Dictionary;
 	
@@ -64,8 +66,9 @@ package com.esg.parzns.voting
 			
 			for each (var game:GameData in Games.getGames())
 			{
-				var gameListItem:GameListItem = new GameListItemView();
-				addElement(gameListItem);
+				var userBasePanel:UsersBasePanel = new UsersBasePanelView();
+				userBasePanel.setGameData(game);
+				addElement(userBasePanel);
 			}
 		}
 	}
