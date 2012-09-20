@@ -11,7 +11,7 @@ class DB
     protected $dbName = '';
 
 
-    protected function __construct($dbHost, $dbUser, $dbPass, $dbName)
+    public function __construct($dbHost, $dbUser, $dbPass, $dbName)
     {
         $this->dbHost = $dbHost;
         $this->dbUser = $dbUser;
@@ -22,11 +22,15 @@ class DB
 
     public function connect()
     {
-        if (!$this->db) {
-            $this->db = mysql_connect($this->dbHost, $this->dbUser, $this->dbPass);
+        if (!$this->dbConn) {
+            $this->dbConn = mysql_connect($this->dbHost, $this->dbUser, $this->dbPass);
         }
         mysql_select_db($this->dbName);
-        return $this->db;
+        return $this->dbConn;
     }
 
 }
+
+$db = new DB($dbHost, $dbUser, $dbPass, $dbName);
+$dbConn = $db->connect();
+

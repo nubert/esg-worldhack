@@ -23,7 +23,7 @@
 		name: "game"
 	};
 	swfobject.embedSWF(
-		"<?php echo $baseUrl; ?>/assets/swf/Parzns.swf", 
+		"<?php echo $baseUrl; ?>/assets/swf/parzns.swf", 
 		"game", 
 		"760", "600", 
 		"9.0.0",
@@ -37,12 +37,19 @@
 
 <div id="header">
 	<img id="logo" src="<?php echo $baseUrl; ?>/assets/images/logo.png" alt="P.A.R.Z.N.S" />
+	<div id="menu">
+		<a href="<?php echo $baseUrl; ?>"><img src="<?php echo $baseUrl; ?>/assets/images/tab_play.png" alt="Play" /></a>
+		<a href="javascript:void(0);" onClick="PARZNS.sendRequest('sendInvite', null);"><img src="<?php echo $baseUrl; ?>/assets/images/tab_friends.png" alt="Invite Friends" /></a>
+		<a href="javascript:void(0);" onClick="PARZNS.purchaseCoins('1');"><img src="<?php echo $baseUrl; ?>/assets/images/tab_add_coins.png" alt="Add Coins" /></a>
+	</div>
 </div>
 
-<div id="game">
-    <a href="http://www.adobe.com/go/getflashplayer/">
-	    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-	</a>
+<div id="gameWrapper">
+	<div id="game">
+	    <a href="http://www.adobe.com/go/getflashplayer/">
+		    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+		</a>
+	</div>
 </div>
 
 <div id="fb-root"></div>
