@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0081E065160BA6C000EB0B05 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0081E064160BA6C000EB0B05 /* FacebookSDK.framework */; };
+		0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E06B160BBFED00EB0B05 /* LoginViewController.m */; };
+		0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0081E06C160BBFED00EB0B05 /* LoginViewController.xib */; };
 		96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB3160B866B004A9468 /* UIKit.framework */; };
 		96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB5160B866B004A9468 /* Foundation.framework */; };
 		96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB7160B866B004A9468 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		0081E064160BA6C000EB0B05 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		0081E06A160BBFED00EB0B05 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		0081E06B160BBFED00EB0B05 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		0081E06C160BBFED00EB0B05 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 		96203BAF160B866B004A9468 /* parzns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parzns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96203BB3160B866B004A9468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96203BB5160B866B004A9468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +88,9 @@
 		96203BB9160B866B004A9468 /* parzns */ = {
 			isa = PBXGroup;
 			children = (
+				0081E06A160BBFED00EB0B05 /* LoginViewController.h */,
+				0081E06B160BBFED00EB0B05 /* LoginViewController.m */,
+				0081E06C160BBFED00EB0B05 /* LoginViewController.xib */,
 				96203BC2160B866B004A9468 /* AppDelegate.h */,
 				96203BC3160B866B004A9468 /* AppDelegate.m */,
 				96203BC5160B866B004A9468 /* ViewController.h */,
@@ -158,6 +166,7 @@
 				96203BBE160B866B004A9468 /* InfoPlist.strings in Resources */,
 				96203BCA160B866B004A9468 /* ViewController_iPhone.xib in Resources */,
 				96203BCD160B866B004A9468 /* ViewController_iPad.xib in Resources */,
+				0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +180,7 @@
 				96203BC0160B866B004A9468 /* main.m in Sources */,
 				96203BC4160B866B004A9468 /* AppDelegate.m in Sources */,
 				96203BC7160B866B004A9468 /* ViewController.m in Sources */,
+				0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +272,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -278,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "parzns/parzns-Prefix.pch";
 				INFOPLIST_FILE = "parzns/parzns-Info.plist";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
