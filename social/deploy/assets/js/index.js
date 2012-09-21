@@ -21,33 +21,31 @@ var PARZNS = {
 				break;
     	}
     }
-purchaseCoins: function(item_id)
-{
-	FB.ui({
-		method: 'pay',
-		action: 'buy_item',
-		order_info: {
-			'item_id': item_id
-		}
-	}, function(data)
+	purchaseCoins: function(item_id)
 	{
-		if (data['order_id']) {
-			
-		} else if (data['error_code']) {
-			
-		} else {
-			
-		}
-	});
-}
-
+		FB.ui({
+			method: 'pay',
+			action: 'buy_item',
+			order_info: {
+				'item_id': item_id
+			}
+		}, function(data)
+		{
+			if (data['order_id']) {
+				
+			} else if (data['error_code']) {
+				
+			} else {
+				
+			}
+		});
+	},
 	getUserInfo: function()
 	{
 		FB.api('/me', function(response) {
 			  return response;
 			});
-	}
-    
+	},
     postWallFeed: function(caption, description, picture)
     {
     	FB.ui(
