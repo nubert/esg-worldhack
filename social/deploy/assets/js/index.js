@@ -7,7 +7,6 @@ var PARZNS = {
 				var params = {
 					method: 'apprequests',
 					message: 'Come play P.A.R.Z.N.S with me!'
-					frictionlessRequests: true
 				};
 				
 				if(recipients) {
@@ -20,7 +19,7 @@ var PARZNS = {
 				});
 				break;
     	}
-    }
+    },
 	purchaseCoins: function(item_id)
 	{
 		FB.ui({
@@ -44,7 +43,7 @@ var PARZNS = {
 	{
 		FB.api('/me', function(response) {
 			  return response;
-			});
+		});
 	},
     postWallFeed: function(caption, description, picture)
     {
