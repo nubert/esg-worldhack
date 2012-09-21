@@ -16,7 +16,7 @@ $query = "INSERT INTO game_phrases (game_id, facebook_uid, phrase) VALUES ('$gam
 $result = mysql_query($query, $dbConn);
 $phrase_id = mysql_insert_id($dbConn);
 
-openGraph('create', 'http://hackathon.eastsidegames.com/esg-worldhack/backend/opengraph/phrase.php?phrase_id=' . $phrase_id);
+openGraph('create', 'http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/opengraph/phrase.php?phrase_id=' . $phrase_id);
 
 $response = array('success' => true,
                     'message' => 'phrase added'

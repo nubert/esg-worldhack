@@ -1,6 +1,7 @@
 <?php 
 
 require_once '../lib/db.php';
+require_once '../lib/facebook.php';
 
 $facebookUid = isset($_REQUEST['fbuid']) ? $_REQUEST['fbuid'] : '';
 
@@ -35,6 +36,7 @@ for ($i = 0; $i < 3; $i++) {
 
 $query = "INSERT INTO games (starting_facebook_uid, facebook_uid1, facebook_uid2, verb_id, letters) VALUES ('$facebookUid', '" . $player1['facebook_uid'] . "', '" . $player2['facebook_uid'] . "', " . $verb['verb_id'] . ", '$letters')";
 $result = mysql_query($query, $dbConn);
+$game_id = mysql_insert_id($dbConn);
 
 if (!mysql_error($dbConn)) {
     $gameId = mysql_insert_id($dbConn);   
@@ -42,6 +44,9 @@ if (!mysql_error($dbConn)) {
     
     $result = mysql_query($query, $dbConn);
     $row = mysql_fetch_assoc($result);
+    
+    openGraph('create', 'http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/opengraph/game.php?game_id=' . $game_id);
+    
     $response = array('success' => true,
                         'gameId' => $gameId,
                         'friend1' => $row['p1_first_name'] . ' ' . $row['p1_last_name'],
