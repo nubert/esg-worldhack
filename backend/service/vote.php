@@ -22,8 +22,8 @@
 		exit;
 	}
 	
-	// insert into the database
-	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('$fbuid', '$phraseId')";
+	// insert into the database!
+	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('" . $fbuid . "', " . $phraseId . ")";
 	$result = mysql_query($query, $dbConn);
 	
 	if ($result !== true) {
