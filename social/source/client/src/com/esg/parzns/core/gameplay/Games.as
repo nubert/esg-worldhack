@@ -8,7 +8,12 @@ package com.esg.parzns.core.gameplay
 
 		public static function setGames(gameList:*):void
 		{
-			games = parseGameList(gameList);
+			games = parseGameList(gameList.games);
+		}
+		
+		public static function addGame(gameData:*):void
+		{
+			getGames()[gameData.gameId] = new GameData(gameData);
 		}
 		
 		public static function getGames():Dictionary
@@ -20,8 +25,9 @@ package com.esg.parzns.core.gameplay
 		{
 			var returnedGames:Dictionary = new Dictionary();
 			
-			for each (var gameData:* in gameList)
+			for (var i:int = 0; i < gameList.length; i++)
 			{
+				var gameData:* = gameList[i];
 				returnedGames[gameData.gameId] = new GameData(gameData);
 			}
 			

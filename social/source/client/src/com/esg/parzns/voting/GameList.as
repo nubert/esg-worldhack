@@ -28,14 +28,19 @@ package com.esg.parzns.voting
 			// Genereate the list
 			
 			// Service call get the game list
-			onDummyGameListLoaded();
+			getGameList();
 		}
 		
+		public function refresh():void
+		{
+			getGameList();
+		}
+
 		private function getGameList():void
 		{
 			var gamesList:BaseLoader = new BaseLoader();
 			var params:Dictionary = new Dictionary();
-			params["user"] = PlayerInfo.getUserId();
+			params["fbuid"] = PlayerInfo.getUserId();
 			gamesList.addEventListener(BaseLoaderEvent.LOAD_COMPLETE, onGameListLoaded);
 			gamesList.setCall("getCurrentGames.php", params);
 		}
@@ -52,7 +57,7 @@ package com.esg.parzns.voting
 		
 		private function onGameListLoaded(e:BaseLoaderEvent):void
 		{
-			trace("loaded");
+			setGames(e.getResponse());
 		}
 		
 		private function onDummyGameListLoaded():void
@@ -64,12 +69,18 @@ package com.esg.parzns.voting
 		{
 			Games.setGames(gamesData);
 			
+			clear();
 			for each (var game:GameData in Games.getGames())
 			{
 				var userBasePanel:UsersBasePanel = new UsersBasePanelView();
 				userBasePanel.setGameData(game);
 				addElement(userBasePanel);
 			}
+		}
+		
+		private function clear():void
+		{
+			this.removeAllElements();
 		}
 	}
 }

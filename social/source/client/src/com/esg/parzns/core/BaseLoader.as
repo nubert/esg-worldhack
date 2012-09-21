@@ -21,7 +21,7 @@ package com.esg.parzns.core
 		public function setCall(serviceCallName:String, params:Dictionary):void
 		{
 			var url:String = GAME_SERVER_URL + serviceCallName + encodeParams(params)
-			var urlRequest:URLRequest = new URLRequest(GAME_SERVER_URL + "/" + serviceCallName);
+			var urlRequest:URLRequest = new URLRequest(url);
 			var loader:URLLoader = new URLLoader();
 			
 			loader.addEventListener(Event.COMPLETE, onComplete);
