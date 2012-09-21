@@ -1,6 +1,7 @@
 <?php 
 
 require_once '../lib/db.php';
+require_once '../lib/facebook.php';
 
 $facebookUid = isset($_REQUEST['fbuid']) ? $_REQUEST['fbuid'] : '';
 $gameId = isset($_REQUEST['gameId']) ? $_REQUEST['gameId'] : '';
@@ -13,6 +14,9 @@ if (!$facebookUid) {
 
 $query = "INSERT INTO game_phrases (game_id, facebook_uid, phrase) VALUES ('$gameId', '$facebookUid', '" . $phrase . "')";
 $result = mysql_query($query, $dbConn);
+$phrase_id = mysql_insert_id($dbConn);
+
+openGraph('create', 'phrase');
 
 $response = array('success' => true,
                     'message' => 'phrase added'
