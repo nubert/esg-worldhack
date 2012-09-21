@@ -6,12 +6,10 @@ $phrase_id = isset($_GET['phrase_id']) ? $_GET['phrase_id'] : 0;
 $query = "SELECT p.phrase, g.letters FROM game_phrases AS p LEFT JOIN games AS g ON games.game_id = p.game_id WHERE p.phrase_id = " . mysql_real_escape_string($phrase_id);
 $result = mysql_query($query, $dbConn);
 $phrase = '';
-$letters = '';
 
 if (mysql_num_rows($result) > 0) {
-	$row = mysql_fetch_row($result);
+	$row = mysql_fetch_assoc($result);
 	$phrase = $row['phrase'];
-	$letters = $row['letters'];
 }
 
 if ($phrase) {
