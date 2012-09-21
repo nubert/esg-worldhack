@@ -7,6 +7,8 @@
 //
 
 #import "GameDetailsViewController.h"
+//#import "ServerAPI.h"
+#import "EntryTableViewCell.h"
 
 @interface GameDetailsViewController ()
 
@@ -16,6 +18,9 @@
 
 @synthesize gameDescription=_gameDescription;
 @synthesize entryList=_entryList;
+@synthesize definition1;
+@synthesize definition2;
+@synthesize definition3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +39,7 @@
     entryListDataSource = [[EntryTableViewDataSource alloc] initWithTableView:_entryList];
     
     _entryList.dataSource = entryListDataSource;
+    _entryList.delegate = self;
     
     [entryListDataSource sync];
 }
@@ -46,6 +52,16 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    EntryTableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    //[ServerAPI vote:_game.gameID entryID:cell.entry.entryID];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSString* entry;
+    
+    textField.text = @"";
     
 }
 
@@ -57,7 +73,7 @@
 - (void)setGame:(Game *)game
 {
     _game = game;
-    
+    _gameDescription.text = [game toString];
 }
 
 @end

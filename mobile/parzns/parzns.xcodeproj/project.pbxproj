@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E06B160BBFED00EB0B05 /* LoginViewController.m */; };
-		0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0081E06C160BBFED00EB0B05 /* LoginViewController.xib */; };
 		0081E1D0160BE8B200EB0B05 /* ESJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E1B8160BE8B200EB0B05 /* ESJSON.m */; };
 		0081E1D1160BE8B200EB0B05 /* ESJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E1BA160BE8B200EB0B05 /* ESJsonParser.m */; };
 		0081E1D2160BE8B200EB0B05 /* ESJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0081E1BC160BE8B200EB0B05 /* ESJsonStreamParser.m */; };
@@ -32,13 +30,18 @@
 		229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A053A160BC3F200319CE5 /* EntryTableViewDataSource.m */; };
 		229A054B160BCC8F00319CE5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229A054A160BCC8F00319CE5 /* FacebookSDK.framework */; };
 		229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229A054D160BCEC300319CE5 /* GameDetailsViewController.m */; };
+		22CA62CA160BDB920095B40D /* Title.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA7160BD229004A9468 /* Title.xib */; };
+		22CA62CB160BDB960095B40D /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA3160BD229004A9468 /* EntryTableViewCell.xib */; };
+		22CA62CC160BDB960095B40D /* GameDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA4160BD229004A9468 /* GameDetails.xib */; };
+		22CA62CD160BDB960095B40D /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA5160BD229004A9468 /* GameTableViewCell.xib */; };
+		22CA62CE160BDB960095B40D /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA6160BD229004A9468 /* Home.xib */; };
+		22CA62DE160BEAE30095B40D /* Title.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CA62DD160BEAE30095B40D /* Title.m */; };
 		96203BB4160B866B004A9468 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB3160B866B004A9468 /* UIKit.framework */; };
 		96203BB6160B866B004A9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB5160B866B004A9468 /* Foundation.framework */; };
 		96203BB8160B866B004A9468 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96203BB7160B866B004A9468 /* CoreGraphics.framework */; };
 		96203BBE160B866B004A9468 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96203BBC160B866B004A9468 /* InfoPlist.strings */; };
 		96203BC0160B866B004A9468 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BBF160B866B004A9468 /* main.m */; };
 		96203BC4160B866B004A9468 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BC3160B866B004A9468 /* AppDelegate.m */; };
-		96203BC7160B866B004A9468 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203BC6160B866B004A9468 /* ViewController.m */; };
 		96203C98160BD090004A9468 /* app_icon_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C8E160BD090004A9468 /* app_icon_1024x1024.png */; };
 		96203C99160BD090004A9468 /* app_icon_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C8F160BD090004A9468 /* app_icon_768x1024.png */; };
 		96203C9A160BD090004A9468 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 96203C90160BD090004A9468 /* logo.png */; };
@@ -54,12 +57,11 @@
 		96203CAA160BD22A004A9468 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA5160BD229004A9468 /* GameTableViewCell.xib */; };
 		96203CAB160BD22A004A9468 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA6160BD229004A9468 /* Home.xib */; };
 		96203CAC160BD22A004A9468 /* Title.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA7160BD229004A9468 /* Title.xib */; };
+		96203CB5160BE04E004A9468 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203CB4160BE04E004A9468 /* Player.m */; };
+		96203CB8160BE521004A9468 /* ServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203CB7160BE521004A9468 /* ServerAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0081E06A160BBFED00EB0B05 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
-		0081E06B160BBFED00EB0B05 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
-		0081E06C160BBFED00EB0B05 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
 		0081E1B7160BE8B200EB0B05 /* ESJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESJSON.h; sourceTree = "<group>"; };
 		0081E1B8160BE8B200EB0B05 /* ESJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESJSON.m; sourceTree = "<group>"; };
 		0081E1B9160BE8B200EB0B05 /* ESJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESJsonParser.h; sourceTree = "<group>"; };
@@ -106,6 +108,8 @@
 		229A054A160BCC8F00319CE5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		229A054C160BCEC300319CE5 /* GameDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDetailsViewController.h; path = UI/GameDetailsViewController.h; sourceTree = "<group>"; };
 		229A054D160BCEC300319CE5 /* GameDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDetailsViewController.m; path = UI/GameDetailsViewController.m; sourceTree = "<group>"; };
+		22CA62DC160BEAE30095B40D /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Title.h; sourceTree = SOURCE_ROOT; };
+		22CA62DD160BEAE30095B40D /* Title.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Title.m; sourceTree = SOURCE_ROOT; };
 		96203BAF160B866B004A9468 /* parzns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parzns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96203BB3160B866B004A9468 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96203BB5160B866B004A9468 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,8 +120,6 @@
 		96203BC1160B866B004A9468 /* parzns-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "parzns-Prefix.pch"; sourceTree = "<group>"; };
 		96203BC2160B866B004A9468 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96203BC3160B866B004A9468 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		96203BC5160B866B004A9468 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		96203BC6160B866B004A9468 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		96203C8E160BD090004A9468 /* app_icon_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_1024x1024.png; sourceTree = "<group>"; };
 		96203C8F160BD090004A9468 /* app_icon_768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_768x1024.png; sourceTree = "<group>"; };
 		96203C90160BD090004A9468 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -134,6 +136,10 @@
 		96203CA6160BD229004A9468 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		96203CA7160BD229004A9468 /* Title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Title.xib; sourceTree = "<group>"; };
 		96203CB1160BD9DB004A9468 /* JSONKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKeys.h; sourceTree = "<group>"; };
+		96203CB3160BE04E004A9468 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		96203CB4160BE04E004A9468 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		96203CB6160BE521004A9468 /* ServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAPI.h; sourceTree = "<group>"; };
+		96203CB7160BE521004A9468 /* ServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,10 @@
 				229A054C160BCEC300319CE5 /* GameDetailsViewController.h */,
 				229A054D160BCEC300319CE5 /* GameDetailsViewController.m */,
 				96203CB1160BD9DB004A9468 /* JSONKeys.h */,
+				96203CB3160BE04E004A9468 /* Player.h */,
+				96203CB4160BE04E004A9468 /* Player.m */,
+				96203CB6160BE521004A9468 /* ServerAPI.h */,
+				96203CB7160BE521004A9468 /* ServerAPI.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -236,6 +246,8 @@
 		96203BB9160B866B004A9468 /* parzns */ = {
 			isa = PBXGroup;
 			children = (
+				22CA62DC160BEAE30095B40D /* Title.h */,
+				22CA62DD160BEAE30095B40D /* Title.m */,
 				0081E1B5160BE89600EB0B05 /* JSON */,
 				96203CA3160BD229004A9468 /* EntryTableViewCell.xib */,
 				96203CA4160BD229004A9468 /* GameDetails.xib */,
@@ -243,13 +255,8 @@
 				96203CA6160BD229004A9468 /* Home.xib */,
 				96203CA7160BD229004A9468 /* Title.xib */,
 				229A0522160BB6FA00319CE5 /* UI */,
-				0081E06A160BBFED00EB0B05 /* LoginViewController.h */,
-				0081E06B160BBFED00EB0B05 /* LoginViewController.m */,
-				0081E06C160BBFED00EB0B05 /* LoginViewController.xib */,
 				96203BC2160B866B004A9468 /* AppDelegate.h */,
 				96203BC3160B866B004A9468 /* AppDelegate.m */,
-				96203BC5160B866B004A9468 /* ViewController.h */,
-				96203BC6160B866B004A9468 /* ViewController.m */,
 				96203BBA160B866B004A9468 /* Supporting Files */,
 				229A052D160BBB8600319CE5 /* Game.h */,
 				229A052E160BBB8600319CE5 /* Game.m */,
@@ -358,7 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				96203BBE160B866B004A9468 /* InfoPlist.strings in Resources */,
-				0081E06E160BBFED00EB0B05 /* LoginViewController.xib in Resources */,
 				96203C98160BD090004A9468 /* app_icon_1024x1024.png in Resources */,
 				96203C99160BD090004A9468 /* app_icon_768x1024.png in Resources */,
 				96203C9A160BD090004A9468 /* logo.png in Resources */,
@@ -369,11 +375,11 @@
 				96203C9F160BD090004A9468 /* logo-final.png in Resources */,
 				96203CA0160BD090004A9468 /* mountain-new2.png in Resources */,
 				96203CA1160BD090004A9468 /* paper2.jpg in Resources */,
-				96203CA8160BD22A004A9468 /* EntryTableViewCell.xib in Resources */,
-				96203CA9160BD22A004A9468 /* GameDetails.xib in Resources */,
-				96203CAA160BD22A004A9468 /* GameTableViewCell.xib in Resources */,
-				96203CAB160BD22A004A9468 /* Home.xib in Resources */,
-				96203CAC160BD22A004A9468 /* Title.xib in Resources */,
+				22CA62CA160BDB920095B40D /* Title.xib in Resources */,
+				22CA62CB160BDB960095B40D /* EntryTableViewCell.xib in Resources */,
+				22CA62CC160BDB960095B40D /* GameDetails.xib in Resources */,
+				22CA62CD160BDB960095B40D /* GameTableViewCell.xib in Resources */,
+				22CA62CE160BDB960095B40D /* Home.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +392,6 @@
 			files = (
 				96203BC0160B866B004A9468 /* main.m in Sources */,
 				96203BC4160B866B004A9468 /* AppDelegate.m in Sources */,
-				96203BC7160B866B004A9468 /* ViewController.m in Sources */,
 				229A0525160BB82A00319CE5 /* HomeViewController.m in Sources */,
 				229A052C160BBB1600319CE5 /* GameTableViewCell.m in Sources */,
 				229A052F160BBB8600319CE5 /* Game.m in Sources */,
@@ -396,6 +401,8 @@
 				229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */,
 				229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */,
 				0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */,
+				96203CB5160BE04E004A9468 /* Player.m in Sources */,
+				96203CB8160BE521004A9468 /* ServerAPI.m in Sources */,
 				0081E1D0160BE8B200EB0B05 /* ESJSON.m in Sources */,
 				0081E1D1160BE8B200EB0B05 /* ESJsonParser.m in Sources */,
 				0081E1D2160BE8B200EB0B05 /* ESJsonStreamParser.m in Sources */,
@@ -410,6 +417,7 @@
 				0081E1DB160BE8B200EB0B05 /* ESJsonWriter.m in Sources */,
 				0081E1DE160BE8BF00EB0B05 /* NetworkConnector.m in Sources */,
 				0081E1E1160BE8D400EB0B05 /* NSObject+ESJson.m in Sources */,
+				22CA62DE160BEAE30095B40D /* Title.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

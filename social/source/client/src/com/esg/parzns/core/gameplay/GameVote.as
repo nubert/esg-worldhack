@@ -23,6 +23,11 @@ package com.esg.parzns.core.gameplay
 			return votes;
 		}
 		
+		public function vote():void
+		{
+			votes += 1;
+		}
+		
 		public function getEntryId():int
 		{
 			return entryId;

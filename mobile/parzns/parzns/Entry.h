@@ -10,6 +10,7 @@
 
 @interface Entry : NSObject
 
+@property int entryID;
 @property int votes;
 @property NSString* definition;
 

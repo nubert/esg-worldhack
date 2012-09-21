@@ -15,5 +15,6 @@
 }
 
 @property Entry* entry;
+@property IBOutlet UILabel* tableViewLabel;
 
 @end

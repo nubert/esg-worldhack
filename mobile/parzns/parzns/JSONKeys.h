@@ -7,7 +7,7 @@
 //
 
 #define KEY_GAMES @"games"
-#define KEY_GAME_ID @"gameId"
+#define KEY_GAMEID @"gameId"
 #define KEY_FRIENDS @"friends"
 #define KEY_FRIEND_1 @"friend1"
 #define KEY_FRIEND_2 @"friend2"
@@ -25,3 +25,5 @@
 #define KEY_ENTRIES @"entries"
 #define KEY_DEF @"def"
 #define KEY_ENTRYID @"entryId"
+#define KEY_FIRSTNAME @"firstname"
+#define KEY_LASTNAME @"lastname"

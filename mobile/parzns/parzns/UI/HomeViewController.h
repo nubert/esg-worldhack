@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GameTableViewDataSource.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : UIViewController<UITableViewDelegate>
 {
     GameTableViewDataSource* gameListDataSource;
 }
