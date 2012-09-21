@@ -12,6 +12,7 @@
 
 @property NSString* acronym;
 @property NSString* verb;
+@property int gameID;
 //@property Player* player1;
 //@property Player* player2;
 @property NSArray* entries;

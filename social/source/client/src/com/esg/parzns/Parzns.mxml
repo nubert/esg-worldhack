@@ -11,10 +11,9 @@
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
 	<s:Label text="PARZNS OMG&#xd;" fontSize="36" width="412" x.loading="234" y.loading="75" horizontalCenter.game="1" top.game="28" text.game="PARZNS OMG&#xd;" textAlign.game="center"/>
-	<s:Group includeIn="game" left="10" right="10" bottom="10" height="149" verticalCenter="215">
-	</s:Group>
 	<s:Group includeIn="game" height="363" right="10" left="10" top="70" verticalCenter="-49">
 		<gameFlow:GameFlowView horizontalCenter="0" top="0" bottom="0">
 		</gameFlow:GameFlowView>
 	</s:Group>
+	<s:Button includeIn="game" label="Create Game" width="189" height="89" horizontalCenter="0" bottom="23" id="createGame"/>
 </parzns:ParznsMain>

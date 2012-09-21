@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <creation:UsersBasePanel xmlns:fx="http://ns.adobe.com/mxml/2009" 
 						 xmlns:s="library://ns.adobe.com/flex/spark" 
-						 xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:creation="com.esg.parzns.creation.*" width="400" height="92">
+						 xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:creation="com.esg.parzns.creation.*" width="400" height="92" xmlns:art="com.esg.parzns.art.*">
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:Group width="64" height="64" left="10" top="13">
-	</s:Group>
-	<s:Group width="64" height="64" left="127" top="13">
-	</s:Group>
-	<s:Label text="are" width="93" verticalAlign="middle" textAlign="center" fontSize="20" left="195" top="37"/>
+	<art:UserThumbnailView id="firstUserThumbnail" width="50" height="50" left="16" top="22">
+	</art:UserThumbnailView>
+	<art:UserThumbnailView id="secondUserThumbnail" width="50" height="50" left="130" top="21">
+	</art:UserThumbnailView>
+	<s:Label text="are" width="93" verticalAlign="middle" textAlign="center" fontSize="20" left="195" top="37" id="verb"/>
 	<s:Label text="acrynom" width="93" verticalAlign="middle" textAlign="center" fontSize="20" id="acrynom" left="297" top="37"/>
 	<s:Label width="37" verticalAlign="middle" textAlign="center" fontSize="20" text="and" left="82" top="41"/>
 </creation:UsersBasePanel>

@@ -12,6 +12,7 @@
 
 //@synthesize player1=_player1;
 //@synthesize player2=_player2;
+@synthesize gameID;
 @synthesize acronym=_acronym;
 @synthesize verb=_verb;
 @synthesize entries=_entries;
