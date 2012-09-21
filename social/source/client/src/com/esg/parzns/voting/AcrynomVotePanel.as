@@ -45,9 +45,7 @@ package com.esg.parzns.voting
 			// Do a local update
 			gameVote.vote();
 			//onVoted(null);
-			//voteBackend();
-			Update backend
-			
+			voteBackend();
 		}
 		
 		private function voteBackend():void
