@@ -5,6 +5,7 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	<s:BitmapImage source="@Embed('art/button_horizontal_bar.png')"/>
 	<art:UserThumbnailView id="firstUserThumbnail" width="50" height="50" left="16" top="22">
 	</art:UserThumbnailView>
 	<art:UserThumbnailView id="secondUserThumbnail" width="50" height="50" left="130" top="21">
@@ -12,4 +13,6 @@
 	<s:Label text="are" width="93" verticalAlign="middle" textAlign="center" fontSize="20" left="195" top="37" id="verb"/>
 	<s:Label text="acrynom" width="93" verticalAlign="middle" textAlign="center" fontSize="20" id="acrynom" left="297" top="37"/>
 	<s:Label width="37" verticalAlign="middle" textAlign="center" fontSize="20" text="and" left="82" top="41"/>
+	
+	
 </creation:UsersBasePanel>
