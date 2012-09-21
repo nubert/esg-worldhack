@@ -4,7 +4,7 @@
 	require_once('../lib/auth.php');
 	
 	$fbuid = $_REQUEST['fbuid'];
-	$phraseId = isset($_REQUEST['entryId']) ? $_REQUEST['entryId'] : null;
+	$phraseId = isset($_REQUEST['entryId']) ? (int)$_REQUEST['entryId'] : null;
 
 	if (!$phraseId) {
 		echo json_encode(array('success' => false, 'message' => 'missing phrase id'));
@@ -21,13 +21,12 @@
 		echo json_encode(array('success' => false, 'message' => 'phrase id doesnt exist'));
 		exit;
 	}
-	mysql_free_result($result);
 	
-	// insert into the database
-	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('$fbuid', '$phraseId')";
+	// insert into the database!
+	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('" . $fbuid . "', " . $phraseId . ")";
 	$result = mysql_query($query, $dbConn);
 	
-	if ($result === true) {
+	if ($result !== true) {
 		echo json_encode(array('success' => false, 'message' => 'vote failed'));
 		exit;
 	} else {
