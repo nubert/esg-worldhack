@@ -1,4 +1,5 @@
 <?php require_once '../../backend/lib/config.php'; ?>
+<?php require_once '../../backend/lib/facebook.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -15,6 +16,7 @@
 	<script src="<?php echo $baseUrl; ?>/assets/js/index.js"></script>
 	<script type="text/javascript">
 	var flashvars = {
+		facebookId: "<?php echo $facebook->getUser(); ?>"
 	};
 	var params = {
 	};
