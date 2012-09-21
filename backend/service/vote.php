@@ -31,6 +31,24 @@
 		echo json_encode(array('success' => false, 'message' => 'vote failed', 'query' => $query2));
 		exit;
 	} else {
+		// get all people involved in this game and send them a notification via the open grpah
+		$nquery = "SELECT g.starting_facebook_uid as id0, g.facebook_uid1 as id1, g.facebook_uid2 as id2 FROM games g, game_phrases gp WHERE g.game_id=gp.game_id AND gp.phrase_id=" . $phraseId;
+		$nresult = mysql_query($nquery, $dbConn);
+		$ids = array();
+		while ($row = mysql_fetch_assoc($nresult)) {
+			$ids[] = $row['id0'];
+			$ids[] = $row['id1'];
+			$ids[] = $row['id2'];
+		}
+		if (!empty($ids)) {
+			/*/ notification code
+			require_once('../lib/facebook.php');
+			try {
+				notifyUsers($ids, 'vote');
+			} catch (Exception $e) {
+				// do nothing
+			}*/
+		}
 		openGraph('vote', 'http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/opengraph/phrase.php?phrase_id=' . $phraseId);
 		echo json_encode(array('success' => true, 'message' => 'Vote registered'));
 	}
