@@ -3,6 +3,15 @@ require_once '../../backend/lib/config.php';
 require_once '../../backend/lib/facebook.php';
 require_once '../../backend/lib/db.php';
 
+if (!$facebookId) {
+	$params = array(
+			'scope' => 'email, publish_actions'
+	);
+
+	print('<script>top.location.href=\'' .  $facebook->getLoginUrl($params) . '\'</script>');
+	exit;
+}
+
 $user = null;
 $query = "SELECT * FROM players WHERE facebook_uid = '$facebookId'";
 $result = mysql_query($query, $dbConn);
