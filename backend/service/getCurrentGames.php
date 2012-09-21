@@ -9,7 +9,7 @@
                 exit;
         }
 
-        $query = "SELECT * FROM games WHERE starting_facebook_uid='" . $facebookUid . "' OR facebook_uid1='"$
+        $query = "SELECT * FROM games WHERE starting_facebook_uid='" . $facebookUid . "' OR facebook_uid1='" . $facebookUid;
         $result = mysql_query($query, $dbConn);
 
 		if ($result) {
