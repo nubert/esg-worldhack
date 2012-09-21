@@ -16,10 +16,10 @@ package com.esg.parzns.core.gameplay
 		public function GameData(info:*)
 		{
 			gameId = info.gameId;
-			friend1Id = info.friend1Id;
-			friend2Id = info.friend2Id;
-			friend1Name = info.friend1Name;
-			friend2Name = info.friend2Name;
+			friend1Id = info.friend1_id;
+			friend2Id = info.friend2_id;
+			friend1Name = info.friend1;
+			friend2Name = info.friend2;
 			verb = info.verb;
 			acronym = info.acronym;
 			entries = generateEntries(info.entries);

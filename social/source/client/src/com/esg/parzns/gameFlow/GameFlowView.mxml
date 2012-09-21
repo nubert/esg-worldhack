@@ -9,7 +9,7 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<voting:GameListView includeIn="gameSelect" x="63" y="10" height="374">
+	<voting:GameListView includeIn="gameSelect" x="63" y="10" height="374" id="gameList">
 	</voting:GameListView>
 	<voting:VotingPageView includeIn="game" horizontalCenter="0" bottom="13" top="125" id="votes">
 	</voting:VotingPageView>

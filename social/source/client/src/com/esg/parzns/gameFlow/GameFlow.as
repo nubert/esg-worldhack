@@ -26,6 +26,12 @@ package com.esg.parzns.gameFlow
 			addEventListener(FlexEvent.CREATION_COMPLETE, onCreationComplete);
 		}
 		
+		public function refresh():void
+		{
+			currentState = "gameSelect";
+			gameList.refresh();
+		}
+		
 		private function onCreationComplete(e:FlexEvent):void
 		{
 			GlobalDisptacher.disptacher.addEventListener(GameSelectedEvent.GAME_SELECTED, onGameSelected);
