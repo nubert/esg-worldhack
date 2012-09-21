@@ -10,6 +10,7 @@
 
 @implementation Entry
 
+@synthesize entryID;
 @synthesize votes;
 @synthesize definition;
 

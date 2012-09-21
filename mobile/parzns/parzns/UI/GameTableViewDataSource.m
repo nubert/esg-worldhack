@@ -16,6 +16,7 @@
     self = [super init];
     if (self)
     {
+        games = [[NSMutableArray alloc] init];
         tableView = aTableView;
     }
     return self;
@@ -45,7 +46,7 @@
     {
         Game* game = [[Game alloc] init];
         game.acronym = @"XYZ";
-        game.players = [NSArray arrayWithObjects:@"Joe", @"Bob", nil];
+        //game.player = [NSArray arrayWithObjects:@"Joe", @"Bob", nil];
         game.verb = @"%d loves to %d";
         [games addObject:game];
     }

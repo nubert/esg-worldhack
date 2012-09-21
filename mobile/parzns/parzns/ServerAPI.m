@@ -19,27 +19,27 @@
 
 + (NSDictionary *)getGameSettings
 {
-    return [ServerAPI serviceCall:@"getGameSettings" data:userData];
+    return [ServerAPI serviceCall:@"getGameSettings" data:[NSDictionary dictionary]];
 }
 
 + (NSDictionary *)getUserState
 {
-    return [ServerAPI serviceCall:@"getUserState" data:userData];
+    return [ServerAPI serviceCall:@"getUserState" data:[NSDictionary dictionary]];
 }
 
 + (NSDictionary *)getCurrentGames
 {
-    return [ServerAPI serviceCall:@"getCurrentGames" data:userData];
+    return [ServerAPI serviceCall:@"getCurrentGames" data:[NSDictionary dictionary]];
 }
 
 + (NSDictionary *)getLeaderboard
 {
-    return [ServerAPI serviceCall:@"getLeaderboard" data:userData];
+    return [ServerAPI serviceCall:@"getLeaderboard" data:[NSDictionary dictionary]];
 }
 
 + (NSDictionary *)startGame
 {
-    return [ServerAPI serviceCall:@"startGame" data:userData];
+    return [ServerAPI serviceCall:@"startGame" data:[NSDictionary dictionary]];
 }
 
 + (NSDictionary *)vote:(int)gameID entryID:(int)entryID
@@ -65,7 +65,7 @@
 
 + (NSDictionary *)serviceCall:(NSString *)call data:(NSDictionary *)data
 {
-    NSMutableDictionary *userData = [NSMutableDictionary dictionaryWithDictionary:additionalData];
+    NSMutableDictionary *userData = [NSMutableDictionary dictionaryWithDictionary:data];
     Player *currentPlayer = [Player currentPlayer];
     [userData setObject:[currentPlayer fbuid] forKey:KEY_FBUID];
     return [NetworkConnector postServer:call data:userData];
