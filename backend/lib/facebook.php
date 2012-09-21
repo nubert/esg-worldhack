@@ -18,7 +18,7 @@ if (!$facebookId) {
 	exit;
 }
 
-function openGraph($action, $object)
+function openGraph($action, $url)
 {
-	$facebook->api('/me:esg_parzns?' . $action . '=http://hackathon.eastsidegames.com/esg-worldhack/backend/opengraph/' . $object . '.php');
+	$facebook->api('/me:esg_parzns?' . $action . '=' . $url);
 }
