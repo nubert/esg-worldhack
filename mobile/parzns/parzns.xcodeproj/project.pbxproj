@@ -54,6 +54,8 @@
 		96203CAA160BD22A004A9468 /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA5160BD229004A9468 /* GameTableViewCell.xib */; };
 		96203CAB160BD22A004A9468 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA6160BD229004A9468 /* Home.xib */; };
 		96203CAC160BD22A004A9468 /* Title.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96203CA7160BD229004A9468 /* Title.xib */; };
+		96203CB5160BE04E004A9468 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203CB4160BE04E004A9468 /* Player.m */; };
+		96203CB8160BE521004A9468 /* ServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 96203CB7160BE521004A9468 /* ServerAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +136,10 @@
 		96203CA6160BD229004A9468 /* Home.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
 		96203CA7160BD229004A9468 /* Title.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Title.xib; sourceTree = "<group>"; };
 		96203CB1160BD9DB004A9468 /* JSONKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKeys.h; sourceTree = "<group>"; };
+		96203CB3160BE04E004A9468 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		96203CB4160BE04E004A9468 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		96203CB6160BE521004A9468 /* ServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAPI.h; sourceTree = "<group>"; };
+		96203CB7160BE521004A9468 /* ServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,10 @@
 				229A054C160BCEC300319CE5 /* GameDetailsViewController.h */,
 				229A054D160BCEC300319CE5 /* GameDetailsViewController.m */,
 				96203CB1160BD9DB004A9468 /* JSONKeys.h */,
+				96203CB3160BE04E004A9468 /* Player.h */,
+				96203CB4160BE04E004A9468 /* Player.m */,
+				96203CB6160BE521004A9468 /* ServerAPI.h */,
+				96203CB7160BE521004A9468 /* ServerAPI.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -396,6 +406,8 @@
 				229A053B160BC3F300319CE5 /* EntryTableViewDataSource.m in Sources */,
 				229A054E160BCEC400319CE5 /* GameDetailsViewController.m in Sources */,
 				0081E06D160BBFED00EB0B05 /* LoginViewController.m in Sources */,
+				96203CB5160BE04E004A9468 /* Player.m in Sources */,
+				96203CB8160BE521004A9468 /* ServerAPI.m in Sources */,
 				0081E1D0160BE8B200EB0B05 /* ESJSON.m in Sources */,
 				0081E1D1160BE8B200EB0B05 /* ESJsonParser.m in Sources */,
 				0081E1D2160BE8B200EB0B05 /* ESJsonStreamParser.m in Sources */,
