@@ -1,16 +1,20 @@
-<?php 
+<?php
 
-require_once '../lib/db.php';
+        require_once('../lib/db.php');
 
-$facebookUid = isset($_REQUEST['fbuid']) ? $_REQUEST['fbuid'] : '';
+        $facebookUid = isset($_REQUEST['fbuid']) ? $_REQUEST['fbuid'] : '';
 
-$query = "SELECT * FROM games WHERE starting_facebook_uid = '$facebookUid'";
-$result = mysql_query($query, $dbConn);
-if (!mysql_error($dbConn)) {
-	while($row=mysql_fetch_array($result)) {
-		$return[] = $row;
-	}
-	return $return;
-}
+        if (!$facebookUid) {
+                echo json_encode(array('success' => false, 'message' => 'missing facebook user id'));
+                exit;
+        }
 
+        $query = "SELECT * FROM games WHERE starting_facebook_uid='" . $facebookUid . "' OR facebook_uid1='"$
+        $result = mysql_query($query, $dbConn);
+
+		if ($result) {
+			while ($row = mysql_fetch_assoc($result)) {
+				
+			}
+		}
 
