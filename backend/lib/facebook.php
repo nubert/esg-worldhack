@@ -20,5 +20,10 @@ if (!$facebookId) {
 
 function openGraph($action, $url)
 {
-	$facebook->api('/me:esg_parzns?' . $action . '=' . $url);
+	try {
+		$facebook->api('/me:esg_parzns?' . $action . '=' . $url);
+	} catch (Exception $e) {
+		
+	}
+	
 }
