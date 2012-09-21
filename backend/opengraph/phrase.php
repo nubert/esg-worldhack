@@ -3,7 +3,7 @@
 require_once '../lib/db.php';
 
 $phrase_id = isset($_GET['phrase_id']) ? $_GET['phrase_id'] : 0;
-$query = "SELECT p.phrase, g.letters FROM game_phrases AS p LEFT JOIN games AS g ON games.game_id = p.game_id WHERE p.phrase_id = " . mysql_real_escape_string($phrase_id);
+$query = "SELECT p.phrase, g.letters FROM game_phrases AS p LEFT JOIN games AS g ON g.game_id = p.game_id WHERE p.phrase_id = " . mysql_real_escape_string($phrase_id);
 $result = mysql_query($query, $dbConn);
 $phrase = '';
 
@@ -24,7 +24,8 @@ if ($phrase) {
   <meta property="og:image"  content="<?php echo $baseUrl . '/assets/images/phrase.png'; ?>" />
 </head>
 <body>
-<img src="<?php echo $baseUrl . '/assets/images/phrase.png'; ?>" />
+<img src="<?php echo $baseUrl . '/assets/images/phrase.png'; ?>" /><br />
+<?php echo $phrase; ?>
 </body>
 </html>
 <?php
