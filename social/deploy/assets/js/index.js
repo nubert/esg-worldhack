@@ -44,7 +44,7 @@ purchaseCoins: function(item_id)
 	getUserInfo: function()
 	{
 		FB.api('/me', function(response) {
-			  return response.name;
+			  return response;
 			});
 	}
     
