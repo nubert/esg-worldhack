@@ -10,6 +10,10 @@ $facebook = new Facebook($config);
 $facebookId = $facebook->getUser();
 
 if (!$facebookId) {
-	print('<script>top.location.href=\'' .  $facebook->getLoginUrl() . '\'</script>');
+	$params = array(
+			'scope' => 'email, publish_actions'
+	);
+	
+	print('<script>top.location.href=\'' .  $facebook->getLoginUrl($params) . '\'</script>');
 	exit;
 }
