@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <gameFlow:GameFlow xmlns:fx="http://ns.adobe.com/mxml/2009" 
 				   xmlns:s="library://ns.adobe.com/flex/spark" 
-				   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:gameFlow="com.esg.parzns.gameFlow.*" width="534" height="394" xmlns:voting="com.esg.parzns.voting.*" xmlns:creation="com.esg.parzns.creation.*" width.game="564" height.game="444">
+				   xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:gameFlow="com.esg.parzns.gameFlow.*" width="534" height="394" xmlns:voting="com.esg.parzns.voting.*" xmlns:creation="com.esg.parzns.creation.*" width.game="728" height.game="508">
 	<gameFlow:states>
 		<s:State name="gameSelect"/>
 		<s:State name="game"/>
@@ -11,8 +11,7 @@
 	</fx:Declarations>
 	<voting:GameListView includeIn="gameSelect" x="63" y="10" height="374">
 	</voting:GameListView>
-	<voting:VotingPageView includeIn="game" horizontalCenter="0" bottom="10" top="110">
+	<voting:VotingPageView includeIn="game" horizontalCenter="0" bottom="13" top="125" id="votes">
 	</voting:VotingPageView>
-	<creation:UsersBasePanelView includeIn="game" top="10" horizontalCenter="0">
-	</creation:UsersBasePanelView>
+	<s:Label includeIn="game" text="Label" fontSize="36" textAlign="center" horizontalCenter="0" top="10" width="487" id="title"/>
 </gameFlow:GameFlow>

@@ -4,6 +4,7 @@ package com.esg.parzns.core.gameplay
 
 	public class GameData
 	{
+		public var gameId:String;
 		public var friend1Id:String;
 		public var friend2Id:String;
 		public var friend1Name:String;
@@ -14,6 +15,7 @@ package com.esg.parzns.core.gameplay
 		
 		public function GameData(info:*)
 		{
+			gameId = info.gameId;
 			friend1Id = info.friend1Id;
 			friend2Id = info.friend2Id;
 			friend1Name = info.friend1Name;

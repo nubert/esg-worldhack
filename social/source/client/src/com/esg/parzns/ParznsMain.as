@@ -1,7 +1,9 @@
 package com.esg.parzns
 {
+	import com.esg.parzns.core.GlobalDisptacher;
 	import com.esg.parzns.core.gameplay.PlayerInfo;
 	
+	import flash.events.EventDispatcher;
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
 	
@@ -18,6 +20,8 @@ package com.esg.parzns
 			var timer:Timer = new Timer(1000);
 			timer.addEventListener(TimerEvent.TIMER, onTimer);
 			timer.start();
+			
+			GlobalDisptacher.disptacher = new EventDispatcher();
 		}
 		
 		private function onTimer(e:TimerEvent):void

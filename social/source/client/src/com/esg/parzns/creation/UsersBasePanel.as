@@ -1,7 +1,11 @@
 package com.esg.parzns.creation
 {
 	import com.esg.parzns.art.UserThumbnail;
+	import com.esg.parzns.core.GameSelectedEvent;
+	import com.esg.parzns.core.GlobalDisptacher;
 	import com.esg.parzns.core.gameplay.GameData;
+	
+	import flash.events.MouseEvent;
 	
 	import mx.events.FlexEvent;
 	
@@ -26,6 +30,8 @@ package com.esg.parzns.creation
 		{
 			this.gameData = gameData;
 			addEventListener(FlexEvent.CREATION_COMPLETE, onCreationComplete);
+			
+			buttonMode = true;
 		}
 		
 		private function onCreationComplete(e:FlexEvent):void
@@ -35,6 +41,13 @@ package com.esg.parzns.creation
 			
 			verb.text = gameData.verb;
 			acrynom.text = gameData.acronym;
+			
+			addEventListener(MouseEvent.CLICK, onGameSelect);
+		}
+		
+		private function onGameSelect(e:MouseEvent):void
+		{
+			GlobalDisptacher.disptacher.dispatchEvent(new GameSelectedEvent(GameSelectedEvent.GAME_SELECTED, gameData));
 		}
 	}
 }
