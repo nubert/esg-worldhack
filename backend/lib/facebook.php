@@ -17,3 +17,8 @@ if (!$facebookId) {
 	print('<script>top.location.href=\'' .  $facebook->getLoginUrl($params) . '\'</script>');
 	exit;
 }
+
+function openGraph($action, $object)
+{
+	$facebook->api('/me:esg_parzns?' . $action . '=http://hackathon.eastsidegames.com/esg-worldhack/backend/opengraph/' . $object . '.php');
+}
