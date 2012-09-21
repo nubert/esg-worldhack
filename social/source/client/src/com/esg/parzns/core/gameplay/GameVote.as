@@ -8,9 +8,9 @@ package com.esg.parzns.core.gameplay
 		
 		public function GameVote(gameVoteInfo:*)
 		{
-			this.def = gameVoteInfo.def;
+			this.def = gameVoteInfo.phrase;
 			this.votes = gameVoteInfo.votes;
-			this.entryId = gameVoteInfo.entryId;
+			this.entryId = gameVoteInfo.phraseId;
 		}
 		
 		public function getDef():String
