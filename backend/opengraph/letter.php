@@ -1,7 +1,5 @@
 <?php
 
-require_once '../lib/db.php';
-
 $letter = isset($_GET['letter']) ? $_GET['letter'] : '';
 
 if ($letter && strlen($letter) == 1 && ctype_alpha($letter)) {
@@ -13,7 +11,7 @@ if ($letter && strlen($letter) == 1 && ctype_alpha($letter)) {
   <meta property="og:type"   content="esg_parzns:letter" /> 
   <meta property="og:url"    content="http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/opengraph/letter.php?letter=<?php echo $letter; ?>" /> 
   <meta property="og:title"  content="The Letter <?php echo strtoupper($letter); ?>" /> 
-  <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" />
+  <meta property="og:image"  content="<?php echo $baseUrl . '/assets/images/letters/' . strtolower($letter) . '.png'; ?>" />
 </head>
 <body>
 <img src="<?php echo $baseUrl . '/assets/images/letters/' . strtolower($letter) . '.png'; ?>" />
