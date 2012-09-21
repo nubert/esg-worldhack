@@ -4,7 +4,7 @@
 	require_once('../lib/auth.php');
 	
 	$fbuid = $_REQUEST['fbuid'];
-	$phraseId = isset($_REQUEST['entryId']) ? $_REQUEST['entryId'] : null;
+	$phraseId = isset($_REQUEST['entryId']) ? (int)$_REQUEST['entryId'] : null;
 
 	if (!$phraseId) {
 		echo json_encode(array('success' => false, 'message' => 'missing phrase id'));
