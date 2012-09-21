@@ -23,11 +23,11 @@
 	}
 	
 	// insert into the database!
-	$query = "INSERT INTO game_votes ('facebook_uid', 'phrase_id') VALUES ('" . $fbuid . "', " . $phraseId . ")";
-	$result = mysql_query($query, $dbConn);
+	$query2 = "INSERT INTO game_votes (facebook_uid, phrase_id) VALUES ('" . $fbuid . "', " . $phraseId . ")";
+	$result2 = mysql_query($query2, $dbConn);
 	
-	if ($result !== true) {
-		echo json_encode(array('success' => false, 'message' => 'vote failed'));
+	if ($result2 !== true) {
+		echo json_encode(array('success' => false, 'message' => 'vote failed', 'query' => $query2));
 		exit;
 	} else {
 		echo json_encode(array('success' => true, 'message' => 'Vote registered'));

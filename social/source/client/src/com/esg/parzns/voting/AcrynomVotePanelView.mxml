@@ -5,6 +5,7 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	<s:Label text="acrynom" width="301" verticalAlign="middle" textAlign="center" fontSize="20" id="acrynom1" left="3" top="27"/>
-	<s:Button label="+" width="64" height="64" fontSize="36" verticalCenter="0" right="2"/>
+	<s:Label text="acrynom" width="301" verticalAlign="middle" textAlign="center" fontSize="20" id="acrynom" left="3" top="27"/>
+	<s:Label id="votes" width="56" right="7" top="2"/>
+	<s:Button id="voteButton" label="+" width="64" height="39" fontSize="36" verticalCenter="12" right="2"/>
 </voting:AcrynomVotePanel>
