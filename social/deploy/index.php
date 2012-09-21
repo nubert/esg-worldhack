@@ -1,5 +1,26 @@
-<?php require_once '../../backend/lib/config.php'; ?>
-<?php require_once '../../backend/lib/facebook.php'; ?>
+<?php
+require_once '../../backend/lib/config.php';
+require_once '../../backend/lib/facebook.php';
+require_once '../../backend/lib/db.php';
+
+$user = null;
+$query = "SELECT * FROM players WHERE facebook_uid = '$facebookId'";
+$result = mysql_query($query, $dbConn);
+
+if (!mysql_num_rows($result)) {
+	$userProfile = $facebook->api('/me','GET');
+	$query = "INSERT INTO players (facebook_uid, first_name, last_name, email) VALUES ('$facebookId', '" . $userProfile['first_name'] . "', '" . $userProfile['last_name'] . "', '" . $userProfile['email'] . "')";
+	$result = mysql_query($query, $dbConn);
+	$user = array(
+			'facebook_uid' => $facebookId,
+			'first_name' => $userProfile['first_name'],
+			'last_name' => $userProfile['last_name'],
+			'email' => $userProfile['email']
+	);
+} else {
+	$user = mysql_fetch_assoc($result);
+}
+?>
 <!DOCTYPE html>
 <html>
 
