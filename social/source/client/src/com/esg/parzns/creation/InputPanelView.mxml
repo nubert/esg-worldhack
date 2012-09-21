@@ -8,5 +8,5 @@
 	<s:TextInput id="text1" left="49" top="10"/>
 	<s:TextInput id="text2" left="49" top="38"/>
 	<s:TextInput id="text3" left="49" top="65"/>
-	<s:Button label="Submit" width="132" height="71" right="70" top="9"/>
+	<s:Button label="Submit" width="132" height="71" right="70" top="9" id="submit"/>
 </creation:InputPanel>

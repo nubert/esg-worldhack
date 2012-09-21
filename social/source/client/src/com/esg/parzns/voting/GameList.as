@@ -8,6 +8,7 @@ package com.esg.parzns.voting
 	import com.esg.parzns.creation.UsersBasePanel;
 	import com.esg.parzns.creation.UsersBasePanelView;
 	
+	import flash.events.Event;
 	import flash.utils.Dictionary;
 	
 	import mx.events.FlexEvent;
@@ -75,7 +76,10 @@ package com.esg.parzns.voting
 				var userBasePanel:UsersBasePanel = new UsersBasePanelView();
 				userBasePanel.setGameData(game);
 				addElement(userBasePanel);
+				
 			}
+			
+			dispatchEvent(new Event("gamesCreate"));
 		}
 		
 		private function clear():void

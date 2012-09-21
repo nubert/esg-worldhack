@@ -61,7 +61,7 @@ package com.esg.parzns
 
 		private function onUserLoaded(e:BaseLoaderEvent):void
 		{
-			PlayerInfo.init({id:e.getResponse().id, username:e.getResponse().name, points:e.getResponse().points});
+			PlayerInfo.init({id:e.getResponse().user.id, username:e.getResponse().user.name, points:e.getResponse().user.points});
 		}
 		
 		private function onTimer(e:TimerEvent):void
