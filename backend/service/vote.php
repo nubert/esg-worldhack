@@ -2,6 +2,7 @@
 
 	require_once('../lib/config.php');
 	require_once('../lib/auth.php');
+	require_once '../lib/facebook.php';
 	
 	$fbuid = $_REQUEST['fbuid'];
 	$phraseId = isset($_REQUEST['entryId']) ? (int)$_REQUEST['entryId'] : null;
@@ -48,5 +49,6 @@
 				// do nothing
 			}*/
 		}
+		openGraph('vote', 'http://hackathon.eastsidegamestudio.com/esg-worldhack/backend/opengraph/phrase.php?phrase_id=' . $phraseId);
 		echo json_encode(array('success' => true, 'message' => 'Vote registered'));
 	}
